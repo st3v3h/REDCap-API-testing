@@ -24,7 +24,7 @@ for field in metadata:
 print()
 print('Every field has these keys: %s' % ', ' .join(sorted(metadata[0].keys())))
 
-'''
+
 payload['content'] = 'record'
 payload['type'] = 'flat'
 response = post(URL, data=payload)
@@ -36,4 +36,4 @@ record = data[2]
 for field_name, value in record.items():
     print('%s: %s' % (field_name, value))
 
-'''
+
